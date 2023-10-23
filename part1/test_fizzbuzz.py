@@ -6,6 +6,8 @@ def test_multiple_of_three_should_return_fizz():
     assert fizzbuzz(3) == 'Fizz'
 
 # def test_multipleOfFive_shouldReturnBuzz():
+def test_multiple_of_five_should_return_buzz():
+    assert fizzbuzz(5) == 'Buzz'
 
 # def test_multipleOfThreeAndFive_shouldReturnFizzBuzz():
 
