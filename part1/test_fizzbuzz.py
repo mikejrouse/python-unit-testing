@@ -2,7 +2,7 @@ import pytest
 from .fizzbuzz import fizzbuzz
 
 #Example Positive Test
-def test_multipleOfThree_shouldReturnFizz():
+def test_multiple_of_three_should_return_fizz():
     assert fizzbuzz(3) == 'Fizz'
 
 # def test_multipleOfFive_shouldReturnBuzz():
