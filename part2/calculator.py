@@ -8,4 +8,6 @@
 from typing import List
 
 def calculator(*args: List[int]) -> int:
+    if any(x < 0 for x in args):
+        raise ValueError("Input must not contain negative integers")
     return sum(args)

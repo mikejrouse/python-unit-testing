@@ -5,27 +5,21 @@ from .fizzbuzz import fizzbuzz
 def test_multiple_of_three_should_return_fizz():
     assert fizzbuzz(3) == 'Fizz'
 
-# def test_multipleOfFive_shouldReturnBuzz():
 def test_multiple_of_five_should_return_buzz():
     assert fizzbuzz(5) == 'Buzz'
 
-# def test_multipleOfThreeAndFive_shouldReturnFizzBuzz():
 def test_multiple_of_three_and_five_should_return_fizz_buzz():
     assert fizzbuzz(15) == 'FizzBuzz'
 
-# def test_notMultipleOfThreeOrFive_shouldReturnNumber():
 def test_not_multiple_of_three_or_five_should_return_number():
     assert fizzbuzz(4) == 4
 
-# def test_notMultipleOfThreeOrFive_shouldNotReturnFizz():
-def test_not_multiple_of_three_or_five_should_not_return_fizz():
+def test_fizzbuzz_not_multiple_of_three():
     assert fizzbuzz(2) != "Fizz"
 
-# def test_notMultipleOfThreeOrFive_shouldNotReturnBuzz():
-def test_not_multiple_of_three_or_five_should_not_return_buzz():
+def test_fizzbuzz_not_multiple_of_five():
     assert fizzbuzz(7) != "Buzz"
 
-# def test_notMultipleOfThreeOrFive_shouldNotReturnFizzBuzz():
 def test_not_multiple_of_three_or_five_should_not_return_fizz_buzz():
     assert fizzbuzz(11) != "FizzBuzz"
 
