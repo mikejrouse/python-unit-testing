@@ -11,3 +11,17 @@ def calculator(*args: List[int]) -> int:
     if any(x < 0 for x in args):
         raise ValueError("Input must not contain negative integers")
     return sum(args)
+
+def operation(operation_type: str, num1: int, num2: int):
+    if operation_type == "add":
+        return num1 + num2
+    elif operation_type == "subtract":
+        return num1 - num2
+    elif operation_type == "multiply":
+        return num1 * num2
+    elif operation_type == "divide":
+        if num2 == 0:
+            return "Division by zero is not allowed."
+        return num1 / num2
+    else:
+        return "Unsupported operation"
