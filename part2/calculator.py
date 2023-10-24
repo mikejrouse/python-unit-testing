@@ -5,4 +5,11 @@
 # 3. Now have add() throw an Error when a negative number is passed in
 # 4. Now write a new method called operation() that takes a string with the value "subtract", "mulitply", or "divide" and 2 integers as parameters that calculates the result of the operation applied to the 2 integers. Return a message informing the user that the operation is not supported if the string is not a supported operation.
 
-def add(num1, num2):
+from typing import List
+
+def calculator(num1, num2):
+    result = num1 + num2
+    return result
+
+def calculator(*args: List[int]) -> int:
+    return sum(args)
