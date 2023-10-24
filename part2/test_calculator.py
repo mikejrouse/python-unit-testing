@@ -1,4 +1,3 @@
-import pytest
 import unittest
 from .calculator import calculator
 
@@ -15,3 +14,4 @@ def test_calculator_with_multiple_integers():
 def test_negative_input_should_throw_value_error():
     with unittest.TestCase().assertRaises(ValueError):
         calculator(6, 7, -18, 25)
+        
