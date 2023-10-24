@@ -7,9 +7,5 @@
 
 from typing import List
 
-def calculator(num1, num2):
-    result = num1 + num2
-    return result
-
 def calculator(*args: List[int]) -> int:
     return sum(args)
